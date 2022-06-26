@@ -16,6 +16,8 @@ section {
   min-height: 100vh;
   max-width: 1000px;
   width: 90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,13 +43,13 @@ section p {
 
 .left {
   width: 50%;
-  b
+
   overflow: hidden;
 }
 .right {
-  width: 50%;
+  width: 40%;
   padding: 30px;
-  background: #407673;
+  background: #1a4643;
   border-radius: 10px;
   color: white;
   margin-left: -50px;
@@ -65,4 +67,18 @@ section p {
   background: white;
   border-radius: 5px;
   display: inline-block;
+}
+
+@media screen and (max-width: 1200px) {
+  section {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 90%;
+    margin-left: 0;
+    margin-top: -50px;
+  }
 }
